@@ -24,15 +24,6 @@ function ShowSideBar(){
    }, TimeSideBar)
 }
 
-toggle.addEventListener("click", () => {
-    setTimeout(() => {
-        sidebar.classList.toggle("close");
-    }, TimeSideBar)
-})
-
-searchBtn.addEventListener("click", () => {
-    sidebar.classList.remove("close");
-})
 
 modeSwitch.addEventListener("click", () => {
     body.classList.toggle("dark");

@@ -28,3 +28,18 @@
     font-size: 0.6rem;
     padding-top: 1rem
 }
+
+.col-news.show{
+    display: block;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+}
+
+.col-news{
+    overflow: hidden
+}
+
+.col-news.hidden{
+    display: none
+}

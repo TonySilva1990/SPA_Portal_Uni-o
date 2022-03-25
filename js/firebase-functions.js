@@ -41,3 +41,14 @@ function returnNews(){
         })
     })
 }
+
+function requirePageNews(){
+    const SectionNews = document.querySelector("#section-news");
+
+    fetch("/pages/news.html")
+    .then(page => page.text())
+        .then(html => {
+            SectionNews.innerHTML = html
+            returnNews()
+        })
+}

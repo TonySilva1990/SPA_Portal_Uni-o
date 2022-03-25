@@ -1,7 +1,6 @@
 'use strict'
 
 const SectionPages = document.querySelector("#section-pages"),
-SectionNews = document.querySelector("#section-news"),
 ButtonsPages = document.querySelectorAll(".button-page")
 
 window.onload = () => {
@@ -12,6 +11,9 @@ window.onload = () => {
     if(DataPage == 1){
        const UrlPage = PageRequire + DataUrlPage;
        FetchPages(UrlPage, DataPage)
+
+       //RETORNA NOTÍCIAS
+       requirePageNews()
     }
 
     //REQUIRE PAGES CLICK BUTTON
@@ -56,19 +58,6 @@ function FetchPages(PageUrl, PageData){
             ];
 
             if(PageData == 3){
-
-                const ParentSection = SectionPages.parentNode,
-                ParentNews = SectionNews.parentNode;
-                ParentSection.classList.add("col-95");
-                ParentSection.classList.add("col-70");
-                ParentNews.classList.remove("hidden");
-                ParentNews.classList.add("show");
-
-                SectionNews.innerHTML = html
-                
-                setTimeout(() =>{
-                    returnNews()
-                }, 800)
                 
             }else
             {
