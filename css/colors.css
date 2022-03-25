@@ -11,7 +11,10 @@
 }
 
 .color-red{
-    background-color: var(--color-red)
+
+    background-image: url(/img/back.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .color-orange{
