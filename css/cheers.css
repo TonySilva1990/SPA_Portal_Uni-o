@@ -1,0 +1,48 @@
+@media only screen and (min-width: 700px) {
+    .list{
+        width: 250px
+    }
+}
+
+.list li{
+    height: 3vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: .3vw;
+}
+
+.list li a:hover {
+    background-color: var(--primary-color);
+}
+
+.list li a:hover .icon, .sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+.list li a {
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6vw;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.list li a{
+    color: black;
+    font-weight: bold;
+}
+
+.list li a span{
+    padding: 0 0 0 3rem;
+}
+
+.list li a:hover{
+    color: white;
+    font-weight: bold;
+}

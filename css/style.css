@@ -33,6 +33,7 @@
         background-color: var(--body-color);
         transition: var(--tran-05);
         height: 100%;
+        animation: all 0.3s ease;
         overflow: hidden
     }
     

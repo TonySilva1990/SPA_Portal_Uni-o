@@ -6,6 +6,38 @@
 	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.scale-in-top {
+	animation: scale-in-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-hide-top {
+	animation: scale-hide-top 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-top {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(3vh);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-hide-top {
+    0% {
+      transform: translateY(3vh);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-5vh);
+      opacity: 1;
+      visibility: hidden
+    }
+  }
+  
+
 @keyframes slide-in-elliptic-bottom-fwd {
     0% {
       transform: translateY(600px) rotateX(30deg) scale(0);

@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/collapse.css">
+    <link rel="stylesheet" href="/css/cheers.css">
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -61,18 +63,26 @@
                             </li>
         
                             <li class="nav-link">
-                                <a href="#" data-tooltip-text="Secretarias" data-page="2" class="tooltip">
-                                    <i class='bx bx-bar-chart-alt-2 icon'></i>
-                                    <span class="text nav-text">Secretarias</span>
+                                <a href="#" data-tooltip-text="Secretarias" data-page="2" class="tooltip toggle-collapse-menu">
+                                    <i class='bx bx-left-indent icon'></i>
+                                    <span class="text nav-text">Secretarias<i style="margin-left: 0.8vw; font-size: 0.7rem" class='bx bxs-down-arrow '></i> </span>
                                 </a>
                             </li>
-        
-                            <li class="nav-link">
-                                <a href="#" data-tooltip-text="Notícias" data-page="3" class="button-page tooltip" data-url-page="news.html">
-                                    <i class='bx bx-bell icon'></i>
-                                    <span class="text nav-text">Noticíais</span>
-                                </a>
-                            </li>
+                            
+                            <div class="collapse hidden">
+                                <li class="nav-link">
+                                    <a data-url-page="cheers.html" data-tooltip-text="Saúde" href="#" data-page="7" class="button-page tooltip" >
+                                        <i class='bx bx-folder-plus icon'></i>
+                                        <span class="text nav-text">Saúde</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a data-tooltip-text="Saúde" href="#" data-page="8" class="button-page tooltip" >
+                                        <i class='bx bx-lock icon'></i>
+                                        <span class="text nav-text">Segurança</span>
+                                    </a>
+                                </li>
+                            </div>
         
                             <li class="nav-link">
                                 <a href="#" data-tooltip-text="Covid-19" data-page="4" class="button-page tooltip">
@@ -146,6 +156,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
     <script src="/js/firebase.js"></script>
     <script src="/js/firebase-functions.js"></script>
+    <script src="/js/collapse.js"></script>
 </body>
 
 </html>

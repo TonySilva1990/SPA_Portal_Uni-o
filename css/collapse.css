@@ -1,0 +1,16 @@
+.collapse.scale-in-top{
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    display: block;
+    padding-right: 1rem
+}
+
+
+.collapse.hidden{
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: none
+}
