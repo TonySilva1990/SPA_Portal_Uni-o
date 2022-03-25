@@ -1,47 +1,51 @@
 'use strict'
 
-const Tooltips = document.querySelectorAll(".tooltip");
+initTooltips()
 
-Tooltips.forEach((element) => {
-    const TooltipText = element.getAttribute("data-tooltip-text"),
-    ElementAfter = element.parentNode;
+function initTooltips(){
+    const Tooltips = document.querySelectorAll(".tooltip");
 
-    ElementAfter.addEventListener("mouseenter", (e) =>{
-        TooltipInit(element, TooltipText)
-    });
+    Tooltips.forEach((element) => {
+        const TooltipText = element.getAttribute("data-tooltip-text"),
+        ElementAfter = element.parentNode;
 
-    ElementAfter.addEventListener("mouseleave", (e) =>{
-        TooltipHide(element)
-    });
-})
+        ElementAfter.addEventListener("mouseenter", (e) =>{
+            TooltipInit(element, TooltipText)
+        });
 
-function TooltipInit(element, text){
+        ElementAfter.addEventListener("mouseleave", (e) =>{
+            TooltipHide(element)
+        });
+    })
 
-    const ElementChildren = element.parentNode,
-    ElementNext = element.nextElementSibling;
+    function TooltipInit(element, text){
 
-    if(ElementNext == null){
-        const TooltipHTML = `
-            <div class="tooltip tooltip-show">
-                ${text}
-            </div>
-        `
+        const ElementChildren = element.parentNode,
+        ElementNext = element.nextElementSibling;
 
-        ElementChildren.insertAdjacentHTML("beforeend", TooltipHTML)
-    }else
-    {
-        if(ElementNext.classList.contains("tooltip-hidden")){
-            ElementNext.classList.remove("tooltip-hidden")
-            ElementNext.classList.add("tooltip-show")
+        if(ElementNext == null){
+            const TooltipHTML = `
+                <div class="tooltip tooltip-show">
+                    ${text}
+                </div>
+            `
+
+            ElementChildren.insertAdjacentHTML("beforeend", TooltipHTML)
+        }else
+        {
+            if(ElementNext.classList.contains("tooltip-hidden")){
+                ElementNext.classList.remove("tooltip-hidden")
+                ElementNext.classList.add("tooltip-show")
+            }
         }
     }
-}
 
-function TooltipHide(element){
-    const NextElement = element.nextElementSibling;
+    function TooltipHide(element){
+        const NextElement = element.nextElementSibling;
 
-    if(NextElement.classList.contains("tooltip-show")){
-        NextElement.classList.remove("tooltip-show")
-        NextElement.classList.add("tooltip-hidden")
+        if(NextElement.classList.contains("tooltip-show")){
+            NextElement.classList.remove("tooltip-show")
+            NextElement.classList.add("tooltip-hidden")
+        }
     }
 }
