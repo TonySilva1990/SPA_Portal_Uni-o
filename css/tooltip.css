@@ -1,0 +1,40 @@
+.tooltip{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    color: white;
+    width: 150px;
+    height: auto;
+    font-size: 0.8rem;
+    text-align: center
+}
+
+.tooltip.tooltip-show{
+    opacity: 1;
+    animation: TooltipShow 200ms both;
+    position: absolute;
+    margin-left: 14.5vw;
+    padding: 0.5rem
+}
+
+.tooltip.tooltip-hidden{
+    opacity: 0;
+    animation: TooltipHidden 200ms both;
+}
+
+@keyframes TooltipHidden {
+    0%{
+        transform: scale3d(1, 1, 1)
+    }
+    100%{
+        transform: scale3d(0, 0, 0)
+    }
+}
+
+@keyframes TooltipShow {
+    0%{
+        transform: scale3d(0, 0, 0)
+    }
+    100%{
+        transform: scale3d(1, 1, 1)
+    }
+}

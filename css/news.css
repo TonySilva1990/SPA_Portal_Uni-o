@@ -1,0 +1,30 @@
+.image-news{
+    width: 8vw;
+    min-width: 8vw;
+    border-radius: 12px;
+    height: auto;
+    min-height: 6rem
+}
+
+.item-news{
+    display: flex;
+    padding-top: 1.8rem
+}
+
+.item-inner{
+    width: 50%;
+    padding-left: 1%
+}
+
+.item-image{
+    width: 50%
+}
+
+.item-title{
+    font-size: 0.8rem
+}
+
+.item-after{
+    font-size: 0.6rem;
+    padding-top: 1rem
+}

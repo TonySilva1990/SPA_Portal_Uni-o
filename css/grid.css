@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+}
+
+.col-5{
+    width: 5%
+}
+
+.col-10{
+    width: 10%
+}
+
+.col-25{
+    width: 25%
+}
+
+.col-50{
+    width: 50%
+}
+
+.col-70{
+    width: 70%;
+}
+
+.col-75{
+    width: 75%
+}
+
+.col-90{
+    width: 90%
+}
+
+.col-95{
+    width: 95%
+}
+
+.col-news.show{
+    display: block;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.col-news{
+    overflow: hidden
+}
+
+.col-news.hidden{
+    display: none
+}
