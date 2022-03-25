@@ -65,6 +65,7 @@
     
     .sidebar.close {
         width: 4.7vw;
+        animation: all 250ms both;
     }
     /* ===== Reusable code - Here ===== */
     

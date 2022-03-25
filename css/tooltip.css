@@ -32,7 +32,7 @@
 
 @keyframes TooltipShow {
     0%{
-        transform: scale3d(0, 0, 0)
+        transform: scale3d(0.6, 0.6, 0.6)
     }
     100%{
         transform: scale3d(1, 1, 1)
