@@ -10,7 +10,7 @@
     
      :root {
         /* ===== Colors ===== */
-        --body-color: #E4E9F7;
+        --body-color: #dbe5ff;
         --sidebar-color: #FFF;
         --primary-color: #0D0D0D;
         --primary-color-light: #F6F5FF;
@@ -30,11 +30,9 @@
     
     body {
         /*min-height: 100vh;*/
-        background-color: var(--body-color);
+        background-color: #f0f0f0;
         transition: var(--tran-05);
         height: 100%;
-        animation: all 0.3s ease;
-        overflow: hidden
     }
     
      ::selection {
@@ -43,12 +41,12 @@
     }
     
     body.dark {
-        --body-color: #4e4e4e;
-        --sidebar-color: #1e1e1e;
-        --primary-color: #3e3e42;
-        --primary-color-light: #2d2d30;
+        --body-color: #ffffff;
+        --sidebar-color: #03A60E;
+        --primary-color: #ffffff;
+        --primary-color-light: #40d816;
         --toggle-color: #fff;
-        --text-color: #ccc;
+        --text-color: rgb(255, 255, 255);
     }
     /* ===== Sidebar ===== */
     
@@ -99,7 +97,7 @@
     }
     
     .sidebar .text {
-        font-size: 17px;
+        font-size: 1em;
         font-weight: 500;
         white-space: nowrap;
         opacity: 1;
@@ -126,13 +124,23 @@
     
     header .image-text .name {
         margin-top: 1vw;
-        width: 10vw;
+        width: 12.4vw;
+        height: 9vh;
+        background-image: url(/img/Colorido.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
     
     .dark header .image-text .name {
         margin-top: 1vw;
         width: 10vw;
-        fill: #808080;
+        width: 12.4vw;
+        height: 9vh;
+        background-image: url(/img/Mono_Branca.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
     
     header .image-text .profession {
@@ -152,6 +160,13 @@
         border-radius: 6px;
     }
     
+    .mouse_container
+    {
+        position: absolute;
+        top: 35vw;
+        right: -5vw;
+    }
+
     .sidebar header .toggle {
         position: absolute;
         top: 3vw;
@@ -271,6 +286,9 @@
         cursor: pointer;
     }
     
+
+
+
     .toggle-switch .switch {
         position: relative;
         height: 2.272727272727273vh;
