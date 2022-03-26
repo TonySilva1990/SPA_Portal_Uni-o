@@ -1,0 +1,36 @@
+.dialog{
+    position: absolute;
+    top: 23%;
+    min-width: 50vw;
+    left: 23%;
+    height: 20rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.dialog-backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.2;
+    width: 100vw;
+    height: 100vh;
+    animation: 1s all ease
+}
+
+.dialog-header{
+    padding: 1.5rem
+}
+
+.dialog-body{
+    padding: 0 1.5rem 1.5rem 1.5rem
+}
+
+.dialog-header p{
+    padding: 1rem 0;
+    color: #7f8fa6;
+    font-size: 0.7rem
+}
+
+.container-days p{
+    padding: 1rem 0;
+    font-size: 0.8rem
+}

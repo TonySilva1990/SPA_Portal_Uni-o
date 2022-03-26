@@ -52,3 +52,46 @@ function requirePageNews(){
             returnNews()
         })
 }
+
+secretaries()
+
+function secretaries(){
+    const Insert = db.ref("/schedule/doctors");
+
+    
+  const characters ='0123456789';
+  
+  function generateSessionUser(length) {
+      let resultSession = ' ';
+      const charactersLength = characters.length;
+      for ( let i = 0; i < length; i++ ) {
+        resultSession += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+  
+      return resultSession;
+  }
+
+    let Arr = {
+       specialization: "Dermatologista",
+       code: 14,
+       days: {
+            monday: {
+                code_day: 1
+            },
+            tuesday: {
+                code_day: 2
+            },
+            wednesday: {
+                code_day: 3
+            },
+            thursday: {
+                code_day: 4
+            },
+            friday: {
+                code_day: 5
+            }
+       }
+    }
+
+    Insert.push()
+}

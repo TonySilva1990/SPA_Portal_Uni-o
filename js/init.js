@@ -57,11 +57,15 @@ function FetchPages(PageUrl, PageData){
                 }
             ];
 
-            if(PageData == 3){
-                
+            if(PageData == 1){
+
             }else
             {
                 SectionPages.innerHTML = html;
+
+                if(PageData == 7){
+                    Cheers()
+                }
             }
 
             if(PageData == 1){
